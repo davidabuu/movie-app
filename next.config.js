@@ -3,4 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  env: {
+    apiUrl: 'http://www.omdbapi.com/?i=tt3896198&apikey=f9a73e1&type=movie',
+  },
+}
