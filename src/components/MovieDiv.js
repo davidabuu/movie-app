@@ -43,7 +43,7 @@ const MovieDiv = () => {
       <div>
         <Row gutter={12}>
           <Col xl={6} lg={6} sm={12} xs={6}>
-            <div>
+            <div style={{marginTop:'7px'}}>
               {loading ? (
                 <div>
                   <Skeleton className="skeleton" />
@@ -64,7 +64,7 @@ const MovieDiv = () => {
                     justifyContent="center"
                     height="200px"
                   >
-                    <Center color="#fff">{data.Title}</Center>
+                    <Center color="#fff">{data.Title ? data.Title : data.Error}</Center>
                   </Flex>
                 </div>
               )}
